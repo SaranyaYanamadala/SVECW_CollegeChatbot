@@ -10,7 +10,7 @@ st.set_page_config(page_title = "SVECW College Chatbot", layout = "centered")
 if "messages" not in st.session_state :
         st.session_state.messages = []
 
-csv_url = "svecw_details.csv"
+csv_url = "svcew_details.csv"
 
 ## If Exception in reading the file 
 try :
