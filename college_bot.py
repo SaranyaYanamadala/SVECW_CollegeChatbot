@@ -41,11 +41,11 @@ def find_closest_question(user_query, vectorizer, question_vectors, df) :
   similarities = cosine_similarity(query_vector, question_vectors).flatten()
   best_match_index = similarities.argmax()
   best_match_score = similarities[best_match_index]
-
-if bext_match_score > 0.3 :
-  return df.iloc[best_match_index]['Answer']
-else :
-  return None
+        
+  if bext_match_score > 0.3 :
+        return df.iloc[best_match_index]['Answer']
+  else :
+        return None
 
 
 st.title("SVECW College Chatbot")
