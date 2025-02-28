@@ -14,7 +14,7 @@ csv_url = "svecw_details.csv"
 
 ## If Exception in reading the file 
 try :
-  df = pd.read_csv(scv_url)
+  df = pd.read_csv(csv_url)
 except Exception as e :
   st.error(f"Failed to load the CSV file. Error : {e}")
   st.stop
