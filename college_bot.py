@@ -4,7 +4,7 @@ import google.generativeai as genai
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-st.set_page_config(page_title = "SVECW College Chatbot", layout = "centered)
+st.set_page_config(page_title = "SVECW College Chatbot", layout = "centered")
 
 ## storing the history
 if "messages" not in st.session_state :
